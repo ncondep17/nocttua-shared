@@ -1,0 +1,11 @@
+{
+  "name": "@nocttua/theme",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/tokens.core.js",
+  "exports": {
+    ".": "./src/tokens.core.js",
+    "./native": "./src/tokens.native.js"
+  }
+}

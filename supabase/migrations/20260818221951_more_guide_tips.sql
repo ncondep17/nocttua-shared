@@ -1,0 +1,35 @@
+-- Más contenido para Insights (ex "Guía"): el prototipo original tenía más
+-- tips que los 4 que llegaron a mock.js. Estos son borrador propio en el
+-- mismo tono — se reemplazan por el contenido real si aparece el archivo
+-- de diseño con el texto original.
+insert into public.guide_tips (id, category_id, title, body, how, position) values
+  ('t5', 'ventanas', 'Señales de sueño antes que el reloj',
+   'Bostezos, mirada perdida o frotarse los ojos suelen aparecer antes de que se cumpla la ventana calculada. Cuando coinciden reloj y señal, es el mejor momento para empezar la rutina.',
+   array['Observá los últimos 10 minutos de la ventana, no solo el número final.', 'Si la señal aparece antes que el reloj, confiá en la señal.'],
+   2),
+  ('t6', 'ventanas', 'Las ventanas se acortan en brotes de crecimiento',
+   'Durante un brote, la misma edad tolera menos tiempo despierta de lo habitual. Dura pocos días y después vuelve al rango anterior.',
+   null, 3),
+  ('t7', 'noche', 'Esperar unos minutos antes de entrar',
+   'Un quejido no siempre es un despertar completo. Dar 2-3 minutos antes de entrar le da lugar a que vuelva a dormirse por su cuenta.',
+   array['Escuchá desde afuera del cuarto antes de decidir.', 'Si escala a llanto sostenido, ahí sí entrá.'],
+   2),
+  ('t8', 'noche', 'Un registro ayuda más que la memoria',
+   'Después de una mala noche es fácil recordarla peor de lo que fue. El registro compara con datos, no con la sensación del día siguiente.',
+   null, 3),
+  ('t9', 'lactancia', 'Etiquetar la hora apenas se guarda',
+   'La extracción de la tarde y la de la noche se confunden fácil si se anotan más tarde. Guardar apenas termina evita el reacomodo manual después.',
+   null, 2),
+  ('t10', 'lactancia', 'La reserva no tiene que ser perfecta',
+   'Un colchón de un día alcanza para la mayoría de los baches. No hace falta acumular semanas de reserva para estar tranquila.',
+   null, 3),
+  ('t11', 'sincronia', 'El registro doble no tiene que ser exacto al minuto',
+   'Alcanza con anotar dentro de la misma franja de 15 minutos. Perseguir la exactitud al segundo consume más energía de la que ahorra.',
+   null, 2),
+  ('t12', 'equipo', 'Un cuidador, un rol claro',
+   'Cuando cada persona sabe exactamente qué puede registrar y qué no, se evitan los registros duplicados o contradictorios en la misma noche.',
+   array['Definan quién registra en cada turno antes de que empiece la noche.', 'El acceso "limitado" alcanza para quien solo cubre un turno puntual.'],
+   1),
+  ('t13', 'equipo', 'Compartir el patrón, no solo el turno',
+   'Antes de un cambio de turno, un vistazo rápido a "Hoy" evita repetir preguntas que ya tienen respuesta en el registro.',
+   null, 2);
